@@ -6,7 +6,9 @@ We will add more automatic identification algorithms which were been proved comp
 
 Reference
 
-@book{shpitser2006identification,
+@book{
+
+  shpitser2006identification,
 
   title={Identification of joint interventional distributions in recursive semi-Markovian causal models},
   
