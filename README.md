@@ -1,4 +1,4 @@
-# identification algorithms
+# Identification Algorithms
 
 Warning: Identification results of Ilya's algorithm are not unique due to different topological orderings and different fixing functions! You should notice that before you use it.
 
