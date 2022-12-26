@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Identification</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css" integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js" integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js" integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <p style="width: 238px; height:200px;">1</p>
+                <p style="text-align: center;">\(p(Y(T))\)</p>
+                <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000000_000.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000000_010.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000000_100.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000000_001.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000000_110.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000000_011.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000000_101.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                   
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000000_111.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                  
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p style="width: 238px; height:200px;">2</p>
+                <p style="text-align: center;">\(p(Y(T))\)</p>
+                <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000100_000.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y|T)\)</p>                 
+                <p style="text-align: center;">\(p(Y|T)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000100_010.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y|T)\)</p>                 
+                <p style="text-align: center;">\(p(Y|T,X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000100_100.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y|T)\)</p>                 
+                <p style="text-align: center;">\(p(Y|T)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000100_001.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">Not Identifiable</p>             
+                <p style="text-align: center;">Not Identifiable</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000100_110.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y|T)\)</p>                 
+                <p style="text-align: center;">Not Identifiable</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000100_011.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">Not Identifiable</p>                 
+                <p style="text-align: center;">Not Identifiable</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000100_101.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">Not Identifiable</p>                 
+                <p style="text-align: center;">Not Identifiable</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000100_111.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">Not Identifiable</p>              
+                <p style="text-align: center;">Not Identifiable</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p style="width: 238px; height:200px;">3</p>
+                <p style="text-align: center;">\(p(Y(T))\)</p>
+                <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000001_000.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000001_010.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000001_100.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000001_001.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>             
+                <p style="text-align: center;">\(p(Y)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000001_110.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000001_011.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000001_101.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000001_111.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>              
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <p style="width: 238px; height:200px;">4</p>
+                <p style="text-align: center;">\(p(Y(T))\)</p>
+                <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001000_000.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001000_010.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|T,X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001000_100.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001000_001.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>              
+                <p style="text-align: center;">\(p(Y)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001000_110.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">Not Identifiable</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001000_011.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">Not Identifiable</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001000_101.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">Not Identifiable</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001000_111.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>            
+                <p style="text-align: center;">Not Identifiable</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p style="width: 238px; height:200px;">5</p>
+                <p style="text-align: center;">\(p(Y(T))\)</p>
+                <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100000_000.svg" style="width: 238px; height:
+                200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100000_010.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100000_100.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100000_001.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                             
+                <p style="text-align: center;">\(p(Y)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100000_110.svg" style="width: 238px; height:
+                200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100000_011.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100000_101.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100000_111.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <p style="width: 238px; height:200px;">6</p>
+                <p style="text-align: center;">\(p(Y(T))\)</p>
+                <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000010_000.svg" style="width: 238px; height:
+                200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000010_010.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000010_100.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000010_001.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000010_110.svg" style="width: 238px; height:
+                200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000010_011.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000010_101.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000010_111.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <p style="width: 238px; height:200px;">7</p>
+                <p style="text-align: center;">\(p(Y(T))\)</p>
+                <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010000_000.svg" style="width: 238px; height:
+                200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010000_010.svg" style="width: 238px; height:
+                200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010000_100.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010000_001.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010000_110.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010000_011.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010000_101.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+            <td>
+                <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010000_111.svg" style="width: 238px; height:
+            200px;" />
+                <p style="text-align: center;">\(p(Y)\)</p>                 
+                <p style="text-align: center;">\(p(Y|X)\)</p>
+            </td>
+</tr>
+
+<tr>
+    <td>
+        <p style="width: 238px; height:200px;">8</p>
+        <p style="text-align: center;">\(p(Y(T))\)</p>
+        <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+    </td>
+        <td>
+            <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_011000_000.svg" style="width: 238px; height:
+            200px;" />
+            <p style="text-align: center;">\(p(Y|T)\)</p>                 
+            <p style="text-align: center;">\(p(Y|T,X)\)</p>
+        </td>
+        <td>
+            <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_011000_010.svg" style="width: 238px; height:
+            200px;" />
+            <p style="text-align: center;">\(p(Y|T)\)</p>                 
+            <p style="text-align: center;">\(p(Y|T,X)\)</p>
+        </td>
+        <td>
+            <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_011000_100.svg" style="width: 238px; height:
+            200px;" />
+            <p style="text-align: center;">Not Identifiable</p>                 
+            <p style="text-align: center;">\(p(Y|T,X)\)</p>
+        </td>
+        <td>
+            <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_011000_001.svg" style="width: 238px; height:
+            200px;" />
+            <p style="text-align: center;">\(\sum_{x\in\mathcal{X}}{p(x|T)}\sum_{t\in\mathcal{T}}{p(t)p(Y|X,t)}\)</p>                 
+            <p style="text-align: center;">\(\sum_{t\in\mathcal{T}}p(t)p(Y|X,t)\)</p>
+        </td>
+        <td>
+            <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_011000_110.svg" style="width: 238px; height:
+            200px;" />
+            <p style="text-align: center;">Not Identifiable</p>                 
+            <p style="text-align: center;">Not Identifiable</p>
+        </td>
+        <td>
+            <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_011000_011.svg" style="width: 238px; height:
+            200px;" />
+            <p style="text-align: center;">Not Identifiable</p>                 
+            <p style="text-align: center;">Not Identifiable</p>
+        </td>
+        <td>
+            <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_011000_101.svg" style="width: 238px; height:
+            200px;" />
+            <p style="text-align: center;">Not Identifiable</p>                 
+            <p style="text-align: center;">Not Identifiable</p>
+        </td>
+        <td>
+            <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_011000_111.svg" style="width: 238px; height:
+            200px;" />
+            <p style="text-align: center;">Not Identifiable</p>                 
+            <p style="text-align: center;">Not Identifiable</p>
+        </td>
+</tr><tr>
+    <td>
+        <p style="width: 238px; height:200px;">9</p>
+        <p style="text-align: center;">\(p(Y(T))\)</p>
+        <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+    </td>            
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000110_000.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y|T)\)</p>                 
+        <p style="text-align: center;">\(p(Y|T,X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000110_010.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y|T)\)</p>                 
+        <p style="text-align: center;">\(p(Y|T,X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000110_100.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y|T)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000110_001.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000110_110.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y|T)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000110_011.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000110_101.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000110_111.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <p style="width: 238px; height:200px;">10</p>
+        <p style="text-align: center;">\(p(Y(T))\)</p>
+        <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010001_000.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010001_010.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010001_100.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010001_001.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010001_110.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010001_011.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010001_101.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010001_111.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <p style="width: 238px; height:200px;">11</p>
+        <p style="text-align: center;">\(p(Y(T))\)</p>
+        <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100100_000.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y|T,X)\)</p>                 
+        <p style="text-align: center;">\(p(Y|T,X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100100_010.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(\sum_{x\in\mathcal{X}}{p(x)p(Y|T,x)}\)</p>                 
+        <p style="text-align: center;">\(p(Y|T,X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100100_100.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y|T,X)\)</p>                 
+        <p style="text-align: center;">\(p(Y|T,X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100100_001.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100100_110.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100100_011.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100100_101.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100100_111.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <p style="width: 238px; height:200px;">12</p>
+        <p style="text-align: center;">\(p(Y(T))\)</p>
+        <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001001_000.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001001_010.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(\frac{p(Y)p(X|Y,T)}{\sum_{y\in\mathcal{Y}}{p(y)p(X|y,T)}}\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001001_100.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001001_001.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001001_110.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001001_011.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001001_101.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001001_111.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <p style="width: 238px; height:200px;">13</p>
+        <p style="text-align: center;">\(p(Y(T))\)</p>
+        <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100010_000.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100010_010.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100010_100.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100010_001.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100010_110.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100010_011.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100010_101.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100010_111.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <p style="width: 238px; height:200px;">14</p>
+        <p style="text-align: center;">\(p(Y(T))\)</p>
+        <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001100_000.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y|T)\)</p>                 
+        <p style="text-align: center;">\(p(Y|T)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001100_010.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y|T)\)</p>                 
+        <p style="text-align: center;">\(p(Y|T,X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001100_100.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y|T)\)</p>                 
+        <p style="text-align: center;">\(p(Y|T)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001100_001.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001100_110.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y|T)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001100_011.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001100_101.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001100_111.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <p style="width: 238px; height:200px;">15</p>
+        <p style="text-align: center;">\(p(Y(T))\)</p>
+        <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110000_000.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110000_010.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110000_100.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110000_001.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110000_110.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110000_011.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110000_101.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110000_111.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <p style="width: 238px; height:200px;">16</p>
+        <p style="text-align: center;">\(p(Y(T))\)</p>
+        <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000011_000.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000011_010.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000011_100.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000011_001.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000011_110.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000011_011.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000011_101.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_000011_111.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <p style="width: 238px; height:200px;">17</p>
+        <p style="text-align: center;">\(p(Y(T))\)</p>
+        <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100001_000.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100001_010.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100001_100.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100001_001.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100001_110.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100001_011.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100001_101.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100001_111.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <p style="width: 238px; height:200px;">18</p>
+        <p style="text-align: center;">\(p(Y(T))\)</p>
+        <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001010_000.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(\frac{p(Y)p(X|Y,T)}{\sum_{y\in\mathcal{Y}}{p(y)p(X|y,T)}}\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001010_010.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X,T)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001010_100.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001010_001.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(\frac{p(Y)p(X|Y,T)}{\sum_{y\in\mathcal{Y}}{p(y)p(X|y,T)}}\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001010_110.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001010_011.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001010_101.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001010_111.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <p style="width: 238px; height:200px;">19</p>
+        <p style="text-align: center;">\(p(Y(T))\)</p>
+        <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010100_000.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(\sum_{x\in\mathcal{X}}{p(x)p(Y|T,x)}\)</p>                 
+        <p style="text-align: center;">\(p(Y|T,X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010100_010.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(\sum_{x\in\mathcal{X}}{p(x)p(Y|T,x)}\)</p>                 
+        <p style="text-align: center;">\(p(Y|T,X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010100_100.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(\sum_{x\in\mathcal{X}}{p(x)p(Y|T,x)}\)</p>                 
+        <p style="text-align: center;">\(p(Y|T,X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010100_001.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010100_110.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010100_011.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010100_101.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_010100_111.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <p style="width: 238px; height:200px;">20</p>
+        <p style="text-align: center;">\(p(Y(T))\)</p>
+        <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110100_000.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(\sum_{x\in\mathcal{X}}{p(x)p(Y|T,x)}\)</p>                 
+        <p style="text-align: center;">\(p(Y|T,X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110100_010.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(\sum_{x\in\mathcal{X}}{p(x)p(Y|T,x)}\)</p>                 
+        <p style="text-align: center;">\(p(Y|T,X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110100_100.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(\sum_{x\in\mathcal{X}}{p(x)p(Y|T,x)}\)</p>                 
+        <p style="text-align: center;">\(p(Y|T,X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110100_001.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110100_110.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110100_011.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110100_101.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110100_111.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <p style="width: 238px; height:200px;">21</p>
+        <p style="text-align: center;">\(p(Y(T))\)</p>
+        <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110001_000.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110001_010.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110001_100.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110001_001.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110001_110.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110001_011.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110001_101.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_110001_111.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <p style="width: 238px; height:200px;">22</p>
+        <p style="text-align: center;">\(p(Y(T))\)</p>
+        <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_011100_000.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y|T)\)</p>                 
+        <p style="text-align: center;">\(p(Y|T,X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_011100_010.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y|T)\)</p>                 
+        <p style="text-align: center;">\(p(Y|T,X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_011100_100.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">\(p(Y|T,X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_011100_001.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_011100_110.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_011100_011.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_011100_101.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_011100_111.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <p style="width: 238px; height:200px;">23</p>
+        <p style="text-align: center;">\(p(Y(T))\)</p>
+        <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001110_000.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y|T)\)</p>                 
+        <p style="text-align: center;">\(p(Y|T,X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001110_010.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y|T)\)</p>                 
+        <p style="text-align: center;">\(p(Y|T,X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001110_100.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y|T)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001110_001.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001110_110.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y|T)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001110_011.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001110_101.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001110_111.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">Not Identifiable</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <p style="width: 238px; height:200px;">24</p>
+        <p style="text-align: center;">\(p(Y(T))\)</p>
+        <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100011_000.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100011_010.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100011_100.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100011_001.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100011_110.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100011_011.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100011_101.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_100011_111.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(p(Y|X)\)</p>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <p style="width: 238px; height:200px;">25</p>
+        <p style="text-align: center;">\(p(Y(T))\)</p>
+        <p style="text-align: center;">\(p(Y(T)|X(T))\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001011_000.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(\frac{p(Y)p(X|Y,T)}{\sum_{y\in\mathcal{Y}}{p(y)p(X|y,T)}}\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001011_010.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(\frac{p(Y)p(X|Y,T)}{\sum_{y\in\mathcal{Y}}{p(y)p(X|y,T)}}\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001011_100.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001011_001.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">\(\frac{p(Y)p(X|Y,T)}{\sum_{y\in\mathcal{Y}}{p(y)p(X|y,T)}}\)</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001011_110.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001011_011.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001011_101.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+    <td>
+        <img src="D:\Code\plotgraph3variable\3variablesfigs\graph_001011_111.svg" style="width: 238px; height:
+            200px;" />
+        <p style="text-align: center;">\(p(Y)\)</p>                 
+        <p style="text-align: center;">Not Identifiable</p>
+    </td>
+</tr>
+    </table>
+</body>
+</html>
