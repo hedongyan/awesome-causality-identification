@@ -6,14 +6,4 @@ We will add more automatic identification algorithms which were been proved comp
 
 # Reference
 
-@book{
-
-  shpitser2006identification,
-
-  title={Identification of joint interventional distributions in recursive semi-Markovian causal models},
-  
-  author={Shpitser, Ilya and Pearl, Judea},
-  
-  year={2006}
-  
-}
+[Ilya Shpitser and Judea Pearl. 2006. Identification of joint interventional distributions in recursive semi-Markovian causal models. In Proceedings of the 21st national conference on Artificial intelligence - Volume 2 (AAAI'06). AAAI Press, 1219–1226.](https://dl.acm.org/doi/abs/10.5555/1597348.1597382)
