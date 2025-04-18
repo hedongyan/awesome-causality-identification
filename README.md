@@ -4,7 +4,7 @@ This repository implement all kinds of identification algorithm of causal infere
 
 1. ID and IDC algorithm of Ilya Shpitser and Judea Pearl. This algorithm is complete for Directed Acyclic Graph with hidden common causes. 
 
-Warning: Identification results of Ilya's algorithm are not unique due to different topological orderings and different fixing functions! You should notice that before you use it.
+Warning: Identification results of Ilya's algorithm are not unique due to different topological orderings and different fixing functions! You should notice that before you use it. The fixing function in this work is the individual's certain value. 
 
 In future, we will add more automatic identification algorithms!
 
