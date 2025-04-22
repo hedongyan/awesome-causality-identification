@@ -1,4 +1,4 @@
-from idc import *
+from algorithms.idc import *
 
 # ----------------------create ADMG----------------------
 g = ADMG()

@@ -1,4 +1,4 @@
-from id import *
+from algorithms.id import *
 
 # ----------------------create ADMG----------------------
 g = ADMG()

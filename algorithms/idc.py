@@ -1,30 +1,5 @@
-#
-# Copyright [yyyy] [name of copyright owner]
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
-
-# # from graphviz import Graph
-# from matplotlib.pyplot import pause
-# from ADMG import ADMG
-# from numpy import product
-# from sympy import latex
-
-
-from warnings import catch_warnings
-from joblib import PrintTime
-import networkx as nx
-
+# import networkx as nx
+import os
 
 def list_is(v,y):
     result=[]
@@ -695,7 +670,6 @@ class ID:
                 return self.id(new_q)
         # raise Exception("failed")
         print("impossible!")
-        import os
         os.system("pause")
         return p
 
@@ -1220,7 +1194,6 @@ def isBirected(birected_edges):
     return True
 
 def isDirectedAcyclicGraph(direct_edges):
-    import networkx as nx
     g = nx.DiGraph()
     for i in range(n_nodes):
         for j in range(n_nodes):
