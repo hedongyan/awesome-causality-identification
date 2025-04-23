@@ -6,7 +6,15 @@ This repository implement all kinds of identification algorithm of causal infere
 
 Warning: Identification results of Ilya's algorithm are not unique due to different topological orderings and different fixing functions! You should notice that before you use it. The fixing function in this work is the individual's certain value. 
 
-In future, we will add more automatic identification algorithms!
+In future, I will add more automatic identification algorithms!
+
+# Example
+
+Please run the examples of ID and IDC by following orders:
+python test_id.py
+python test_idc.py
+
+In the output, "Not identifiable" means we can not identfy the causal effect from treatment to outcome. "V" denote the union of all variables (I use it to simply the length of output).
 
 # Application
 

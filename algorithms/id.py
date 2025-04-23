@@ -540,7 +540,7 @@ class ID:
             # print(v)
             if list_is(ccomponents_g[0], v):
                 print("line 5")
-                raise Exception("failed")
+                raise Exception("Not identifiable!")
 
         g_topological_sorts = g.topological_sort()
         print("g_topological_sorts:",g_topological_sorts)
@@ -587,234 +587,6 @@ class ID:
         os.system("pause")
         return p
 
-def create_napkin():
-    g = ADMG()
-    g.add_node("X1")
-    g.add_node("X2")
-    g.add_node("T")
-    g.add_node("Y")
-    g.add_directed_edge("X1","X2")
-    g.add_directed_edge("X2","T")
-    g.add_directed_edge("T","Y")
-
-    g.add_birected_edge("X1","T")
-    g.add_birected_edge("X1","Y")
-    return g
-
-def create_backdoor1():
-    g = ADMG()
-    g.add_node("X")
-    g.add_node("T")
-    g.add_node("Y")
-    g.add_directed_edge("X","T")
-    g.add_directed_edge("X","Y")
-    g.add_directed_edge("T","Y")
-
-    g.add_birected_edge("X","T")
-    return g
-
-def create_backdoor2():
-    g = ADMG()
-    g.add_node("X")
-    g.add_node("T")
-    g.add_node("Y")
-    g.add_directed_edge("X","T")
-    g.add_directed_edge("X","Y")
-    g.add_directed_edge("T","Y")
-
-    g.add_birected_edge("X","Y")
-    return g
-
-def create_frontdoor():
-    g = ADMG()
-    g.add_node("X")
-    g.add_node("T")
-    g.add_node("Y")
-    g.add_directed_edge("T","X")
-    g.add_directed_edge("X","Y")
-
-    g.add_birected_edge("T","Y")
-    return g
-
-def create_1_bow_3_v():
-    g = ADMG()
-    g.add_node("X")
-    g.add_node("T")
-    g.add_node("Y")
-    g.add_directed_edge("T","X")
-    g.add_directed_edge("X","Y")
-
-    g.add_birected_edge("T","X")
-    return g
-
-def create_2_bow_3_v_nonid1():
-    g = ADMG()
-    g.add_node("X")
-    g.add_node("T")
-    g.add_node("Y")
-    g.add_directed_edge("T","Y")
-    g.add_directed_edge("X","Y")
-
-    g.add_birected_edge("T","X")
-    g.add_birected_edge("Y","X")
-    return g
-
-def create_2_bow_3_v_nonid2():
-    g = ADMG()
-    g.add_node("X")
-    g.add_node("T")
-    g.add_node("Y")
-    g.add_directed_edge("T","X")
-    g.add_directed_edge("X","Y")
-
-    g.add_birected_edge("T","Y")
-    g.add_birected_edge("Y","X")
-    return g
-
-def create_2_bow_3_v_nonid3():
-    g = ADMG()
-    g.add_node("X")
-    g.add_node("T")
-    g.add_node("Y")
-    g.add_directed_edge("X","T")
-    g.add_directed_edge("T","Y")
-
-    g.add_birected_edge("T","X")
-    g.add_birected_edge("Y","X")
-    return g
-
-def create_1_bow():
-    g = ADMG()
-    g.add_node("T")
-    g.add_node("Y")
-    g.add_directed_edge("T","Y")
-
-    g.add_birected_edge("T","Y")
-    return g
-
-def create_2_bow_4_v_nonid1():
-    g = ADMG()
-    g.add_node("X1")
-    g.add_node("T")
-    g.add_node("Y")
-    g.add_node("X2")
-    g.add_directed_edge("T","X1")
-    g.add_directed_edge("X1","Y")
-    g.add_directed_edge("X2","Y")
-
-    g.add_birected_edge("X2","X1")
-    g.add_birected_edge("T","X2")
-    return g
-
-def create_2_bow_4_v_id2():
-    g = ADMG()
-    g.add_node("X1")
-    g.add_node("T")
-    g.add_node("Y")
-    g.add_node("X2")
-    g.add_directed_edge("T","X1")
-    g.add_directed_edge("X1","X2")
-    g.add_directed_edge("X2","Y")
-    g.add_directed_edge("X1","Y")
-    g.add_directed_edge("T","Y")
-
-    g.add_birected_edge("Y","X1")
-    g.add_birected_edge("T","X2")
-    return g
-
-def create_4_bow_4_v_nonid2():
-    g = ADMG()
-    g.add_node("X1")
-    g.add_node("T")
-    g.add_node("Y")
-    g.add_node("X2")
-    g.add_directed_edge("X1","T")
-    g.add_directed_edge("T","X2")
-    g.add_directed_edge("X2","Y")
-
-    g.add_birected_edge("X1","T")
-    g.add_birected_edge("X1","X2")
-    g.add_birected_edge("X1","Y")
-    g.add_birected_edge("T","Y")
-    return g
-
-def create_4_bow_5_v():
-    g = ADMG()
-    g.add_node("X1")
-    g.add_node("T")
-    g.add_node("Y")
-    g.add_node("X2")
-    g.add_node("X3")
-    g.add_directed_edge("X2","T")
-    g.add_directed_edge("T","X1")
-    g.add_directed_edge("X2","X1")
-    g.add_directed_edge("X2","X3")
-    g.add_directed_edge("X3","Y")
-    g.add_directed_edge("X1","Y")
-
-    g.add_birected_edge("T","X2")
-    g.add_birected_edge("T","X3")
-    g.add_birected_edge("T","Y")
-    g.add_birected_edge("X2","Y")
-    return g
-
-def create_4_v_bug1():
-    g = ADMG()
-    g.add_node("X1")
-    g.add_node("T")
-    g.add_node("Y")
-    g.add_node("X2")
-    g.add_directed_edge("T","X1")
-    g.add_directed_edge("X2","X1")
-    g.add_directed_edge("X1","Y")
-
-    g.add_birected_edge("T","Y")
-    return g
-
-def create_4_v_loss1():
-    g = ADMG()
-    g.add_node("X1")
-    g.add_node("T")
-    g.add_node("Y")
-    g.add_node("X2")
-    g.add_directed_edge("T","X2")
-    g.add_directed_edge("X2","X1")
-    g.add_directed_edge("T","Y")
-    g.add_directed_edge("X1","Y")
-    g.add_directed_edge("X2","Y")
-
-    g.add_birected_edge("T","X1")
-    return g
-
-def create_4_v_loss2():
-    g = ADMG()
-    g.add_node("X1")
-    g.add_node("X2")
-    g.add_node("X3")
-    g.add_node("X4")
-    g.add_directed_edge("X1","X2")
-    g.add_directed_edge("X2","X4")
-    g.add_directed_edge("X3","X4")
-
-    g.add_birected_edge("X1","X4")
-    g.add_birected_edge("X3","X4")
-    # g.add_birected_edge("X1","X4")
-    return g
-
-def create_4_v_loss20():
-    g = ADMG()
-    g.add_node("X1")
-    g.add_node("X2")
-    g.add_node("X3")
-    g.add_node("X4")
-    g.add_directed_edge("X1","X3")
-    g.add_directed_edge("X3","X4")
-    g.add_directed_edge("X2","X4")
-
-    g.add_birected_edge("X1","X2")
-    g.add_birected_edge("X2","X4")
-    # g.add_birected_edge("X1","X4")
-    return g
 # ----------------------2 VARIABLES----------------------
 # g = create_1_bow() # line 5
 # p = ObservationProbability()
@@ -840,10 +612,10 @@ def create_4_v_loss20():
 # g = create_4_bow_4_v_nonid2() # line 3->4->5
 # g = create_4_v_bug1() #
 # g = create_4_v_loss1() #
-g = create_4_v_loss2() # 4->2->6; ->7->2->1
-p = ObservationProbability()
+# g = create_4_v_loss2() # 4->2->6; ->7->2->1
+# p = ObservationProbability()
 # p.set_all(None, [], ["X1","X2","T","Y"], [], ["X1","X2","T","Y"])
-p.set_all(None, [], ["X1","X2","X3","X4"], [], ["X1","X2","X3","X4"])
+# p.set_all(None, [], ["X1","X2","X3","X4"], [], ["X1","X2","X3","X4"])
 # ----------------------4 VARIABLES----------------------
 
 # ----------------------5 VARIABLES----------------------
@@ -853,18 +625,18 @@ p.set_all(None, [], ["X1","X2","X3","X4"], [], ["X1","X2","X3","X4"])
 # # ----------------------5 VARIABLES----------------------
 
 
-q = InterventionQuery()
-# q.set_all(g, ["Y"], ["T"], [], p, False)
-q.set_all(g, ["X4"], ["X1"], [], p, False)
-newid = ID()
-identified_p = newid.id(q)
-print("identification result:\n",identified_p.get_latex_expression())
+# q = InterventionQuery()
+# # q.set_all(g, ["Y"], ["T"], [], p, False)
+# q.set_all(g, ["X4"], ["X1"], [], p, False)
+# newid = ID()
+# identified_p = newid.id(q)
+# print("identification result:\n",identified_p.get_latex_expression())
 
 
 # checking all 4 variables#
 
 # direct_edge = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
-birected_edge = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
+# birected_edge = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
 def create_graph(direct_edge, birected_edge, name):
     g = ADMG()
     g.add_node(name[0])
