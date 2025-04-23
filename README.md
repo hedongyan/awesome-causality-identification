@@ -17,7 +17,7 @@ Please run the examples of ID and IDC by following orders:
 python test_id.py
 python test_idc.py
 
-In the output, "Not identifiable" means we can not identfy the causal effect from treatment to outcome. "V" denote the union of all variables (I use it to simply the length of output).
+In the output, "Not identifiable" means we can not identfy the causal effect from treatment to outcome. "V" denote the union of all variables (I use it to shorten the length of output latex code).
 
 # Application
 
