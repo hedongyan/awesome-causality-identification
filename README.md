@@ -6,11 +6,14 @@ This repository implement all kinds of identification algorithm of causal infere
 
 Warning: Identification results of Ilya's algorithm are not unique due to different topological orderings and different fixing functions! You should notice that before you use it. The fixing function in this work is the individual's certain value. 
 
-In future, I will add more automatic identification algorithms!
+In future, I will add more automatic identification algorithms! If the other identification algorithm can be to the same algorithms. I will add an explaination of it rather than implement it repeatly.
 
 # Example
 
+I checked many exmaples of the identification result mannuly. 
+
 Please run the examples of ID and IDC by following orders:
+
 python test_id.py
 python test_idc.py
 
