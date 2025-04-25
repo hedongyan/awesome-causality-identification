@@ -2,12 +2,12 @@ from algorithms.id import *
 import networkx as nx
 import numpy as np
 
-# checking all 4 variables, 
+# -----------------------identify all with 4 measured variables----------------------- 
 direct_edge = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
 birected_edge = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
 
-# create a graph with 4 nodes
-# X1, X2, X3, X4
+# create a graph with 4 nodes, 
+# X1, X2, X3, X4, 
 def create_graph(direct_edge, birected_edge, name):
     g = ADMG()
     g.add_node(name[0])
@@ -126,24 +126,27 @@ print("identifiable/total:",identifiable/total_admg)
 np.savetxt("identified_results.txt",identified_results,fmt="%s")
 
 
-expressions_before = np.loadtxt("identified_results.txt",dtype=str)
-expressions_after = np.loadtxt("MY_identified_results.txt",dtype=str)
-before_after = list_minus(expressions_before,expressions_after)
-np.savetxt("before_after.txt",before_after,fmt="%s")
-print("len(before_after):",len(before_after))
-after_before = list_minus(expressions_after,expressions_before)
-np.savetxt("after_before.txt",after_before,fmt="%s")
-print("len(after_before):",len(after_before))
-from sympy.parsing.latex import parse_latex
-import sympy.parsing.latex._antlr.latexparser as lp
-expr = parse_latex(r"\frac {1 + \sqrt {\a}} {\b}")
-print(expr)
+# manually check the identified results, 
+# 1. copy the "identified_results.txt" result to "MY_identified_results.txt",
+#   where "MY_identified_results.txt" is the 
 
-# np.readtxt("identified_results.txt",dtype=str)
-expressions = np.loadtxt("identified_results.txt",dtype=str)
-for i in range(len(expressions)):
-    print(expressions[i])
+# expressions_before = np.loadtxt("identified_results.txt",dtype=str)
+# expressions_after = np.loadtxt("MY_identified_results.txt",dtype=str)
+# before_after = list_minus(expressions_before,expressions_after)
+# np.savetxt("before_after.txt",before_after,fmt="%s")
+# print("len(before_after):",len(before_after))
+# after_before = list_minus(expressions_after,expressions_before)
+# np.savetxt("after_before.txt",after_before,fmt="%s")
+# print("len(after_before):",len(after_before))
+# from sympy.parsing.latex import parse_latex
+# import sympy.parsing.latex._antlr.latexparser as lp
+# expr = parse_latex(r"\frac {1 + \sqrt {\a}} {\b}")
+# print(expr)
 
-    parse_latex(repr(expressions[i]))
-    print(expressions[i])
-print("len(expressions):",len(expressions))
+# # np.readtxt("identified_results.txt",dtype=str)
+# expressions = np.loadtxt("identified_results.txt",dtype=str)
+# for i in range(len(expressions)):
+#     print(expressions[i])
+#     parse_latex(repr(expressions[i]))
+#     print(expressions[i])
+# print("len(expressions):",len(expressions))
