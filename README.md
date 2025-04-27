@@ -34,6 +34,7 @@ I directly plot the [identification table](https://hedongyan.github.io/files/id3
 I directly list all [51 identification results](https://hedongyan.github.io/files/id4.pdf) of 34752 cases for 4 observed variables with hidden confounders for query Pr(Y(T)). The program to automatically identify the 34752 graphs is test_id_all4v.py. 
 
 ```python
+pip install networkx
 python test_id_all4v.py
 ```
 
