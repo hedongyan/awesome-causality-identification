@@ -8,6 +8,17 @@ Warning: Identification results of Ilya's algorithm are not unique due to differ
 
 In future, I will add more automatic identification algorithms! If the other identification algorithm can be to the same algorithms. I will add an explaination of it rather than implement it repeatly.
 
+# Identification Process
+
+The identification process is very easy to understand. 
+
+1. Create an ADMG which represent the data generation assumptions. The ADMG is DAG with hidden common cause. The three steps are add node names, add directed edges, and add bidirected edges to represent the hidden common causes. 
+2. Create ObservationProbability to represent a distribution. 
+3. Create InterventionQuery to represent a causal query. 
+4. Create identification algorithms (such as ID, IDC) for the identification.
+5. Identify the causal query by the identification algorithm and return the identified ObservationProbability for the InterventionQuery. 
+6. Print the identification result (ObservationProbability) by latex code. 
+
 # Example
 
 I checked many exmaples of the identification result mannuly. 
