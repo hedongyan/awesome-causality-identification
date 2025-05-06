@@ -1,3 +1,25 @@
+# Motivation
+
+My motivation to create this repository at Janurary of 2022 is that existed causal package can not implement the complete identification algorithms of Ilya Shpitser correctly, including [causaleffect](https://github.com/santikka/causaleffect), [causalml](https://causalml.readthedocs.io/en/latest/about.html), [ananke](https://ananke.readthedocs.io/en/latest/)(Ilya Shpitser), dowhy, [cee](https://github.com/L-F-Z/CEE), [dagitty](https://www.dagitty.net/), [YLearn](https://github.com/DataCanvasIO/YLearn). 
+
+1. CausalEffect
+The understanding of causaleffect of line 7 of ID algorithm is wrong in their [paper](https://www.jstatsoft.org/article/view/v076i12/0). 
+
+2. CEE
+The understanding of CEE of line 6 of ID algorithm is wrong. It confused the fixed value v and variable V. And I got a wrong result after I run the program. 
+
+3. Dowhy
+I did not find complete ID and IDC algorithm in their source code. 
+
+4. Ananke
+They use Use fixing operation in nest forms and do not give final expression. 
+
+5. Dagitty
+It only Only support adjustment and Instrument Variable.
+
+6. YLearn
+I did not find complete ID and IDC algorithm in their source code. 
+
 # Introduction
 
 This repository implement all kinds of identification algorithm of causal inference, including causal graph with hidden common causes. Those identification is mainly based on Judea Pearl's three assumpations of identification on structural causal model. 
