@@ -1,8 +1,12 @@
 # Introduction
 
-This repository implement all kinds of identification algorithm of causal inference, including causal graph with hidden common causes. 
+This repository implement all kinds of identification algorithm of causal inference, including causal graph with hidden common causes. Those identification is mainly based on Judea Pearl's three assumpations of identification on structural causal model. 
 
-1. ID and IDC algorithm of Ilya Shpitser and Judea Pearl. This algorithm is complete for Directed Acyclic Graph with hidden common causes. 
+1. ID and IDC algorithm of Ilya Shpitser and Judea Pearl. This algorithm is complete for causal query with observation data on Directed Acyclic Graph with hidden common causes. 
+2. IDZ algorithm of Elias Bareinboim and Judea Pearl. This algorithm is complete for causal query with surrogate experiments and observation data on Directed Acyclic Graph with hidden common causes. 
+3. Path-specific effect identification. The path-specific effect is the causal effect from treatment T to outcome Y by the path of mediater M. When someone use a causal model to intervene the outcome Y by the T, you can terminate its effect if you found a mediater M of T on Y and you can intervene the mediater M. 
+
+These identification algorithms are based on the Judea Pearl's three assumptions of identification on Directed Acyclic Graph. 
 
 Warning: Identification results of Ilya's algorithm are not unique due to different topological orderings and different fixing functions! You should notice that before you use it. The fixing function in this work is the individual's certain value. 
 
@@ -54,3 +58,5 @@ python test_id_all4v.py
 [JUDEA PEARL, Causal diagrams for empirical research, Biometrika, Volume 82, Issue 4, December 1995, Pages 669–688, https://doi.org/10.1093/biomet/82.4.669](https://www.jstor.org/stable/2337329?seq=1)
 
 [Ilya Shpitser and Judea Pearl. 2006. Identification of joint interventional distributions in recursive semi-Markovian causal models. In Proceedings of the 21st national conference on Artificial intelligence - Volume 2 (AAAI'06). AAAI Press, 1219–1226.](https://dl.acm.org/doi/abs/10.5555/1597348.1597382)
+
+[Bareinboim E, Pearl J. Causal inference by surrogate experiments: z-identifiability. InProceedings of the Twenty-Eighth Conference on Uncertainty in Artificial Intelligence 2012 Aug 14 (pp. 113-120).](https://dl.acm.org/doi/abs/10.5555/3020652.3020668)
