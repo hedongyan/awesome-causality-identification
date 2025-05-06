@@ -6,8 +6,6 @@ This repository implement all kinds of identification algorithm of causal infere
 2. IDZ algorithm of Elias Bareinboim and Judea Pearl. This algorithm is complete for causal query with surrogate experiments and observation data on Directed Acyclic Graph with hidden common causes. 
 3. Path-specific effect identification. The path-specific effect is the causal effect from treatment T to outcome Y by the path of mediater M. When someone use a causal model to intervene the outcome Y by the T, you can terminate its effect if you found a mediater M of T on Y and you can intervene the mediater M. 
 
-These identification algorithms are based on the Judea Pearl's three assumptions of identification on Directed Acyclic Graph. 
-
 Warning: Identification results of Ilya's algorithm are not unique due to different topological orderings and different fixing functions! You should notice that before you use it. The fixing function in this work is the individual's certain value. 
 
 In future, I will add more automatic identification algorithms! If the other identification algorithm can be to the same algorithms. I will add an explaination of it rather than implement it repeatly.
