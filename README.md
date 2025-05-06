@@ -12,7 +12,7 @@ The understanding of CEE of line 6 of ID algorithm is wrong. It confused the fix
 I did not find complete ID and IDC algorithm in their source code after searching in their source code. 
 
 4. Ananke.
-They use Use fixing operation in nest forms and do not give final expression. 
+They use fixing operation in nest forms and do not give final expression. 
 
 5. Dagitty.
 It only support adjustment and instrument variable.
