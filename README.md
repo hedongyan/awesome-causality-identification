@@ -76,6 +76,18 @@ pip install networkx
 python test_id_all4v.py
 ```
 
+# Citation
+
+If you use awesome-causality-identification in your research, please cite us as follows:
+
+@misc{causalid,
+  author={Hedong YAN},
+  title={Awesome Causality Identification},
+  howpublished={https://github.com/hedongyan/awesome-causality-identification},
+  note={Version 0.x},
+  year={2025}
+}
+
 # Reference
 
 [JUDEA PEARL, Causal diagrams for empirical research, Biometrika, Volume 82, Issue 4, December 1995, Pages 669–688, https://doi.org/10.1093/biomet/82.4.669](https://www.jstor.org/stable/2337329?seq=1)
