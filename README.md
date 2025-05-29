@@ -35,6 +35,8 @@ Warning: Identification results of Ilya's algorithm are not unique due to differ
 
 In future, I will add more automatic identification algorithms! If the other identification algorithm can be to the same algorithms. I will add an explaination of it rather than implement it repeatly.
 
+![Decision Tree of Identification Algorithm](figs/因果效应识别流程图.png)
+
 # Identification Process
 
 The identification process is very easy to understand. 
