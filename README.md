@@ -28,8 +28,8 @@ I did not find complete ID and IDC algorithm in their source code after searchin
 This repository implement all kinds of identification algorithm of causal inference, including causal graph with hidden common causes. Those identification is mainly based on Judea Pearl's three assumpations of identification on structural causal model. 
 
 1. ID and IDC algorithm of Ilya Shpitser and Judea Pearl. This algorithm is complete for causal query with observation data on Directed Acyclic Graph with hidden common causes. 
-2. IDZ algorithm of Elias Bareinboim and Judea Pearl. This algorithm is complete for causal query with surrogate experiments and observation data on Directed Acyclic Graph with hidden common causes. 
-3. Path-specific effect identification. The path-specific effect is the causal effect from treatment T to outcome Y by the path of mediater M. When someone use a causal model to intervene the outcome Y by the T, you can terminate its effect if you found a mediater M of T on Y and you can intervene the mediater M. 
+2. IDZ algorithm of Elias Bareinboim and Judea Pearl. This algorithm is complete for causal query with surrogate experiments and observation data on Directed Acyclic Graph with hidden common causes. (update soon)
+3. Path-specific effect identification. The path-specific effect is the causal effect from treatment T to outcome Y by the path of mediater M. When someone use a causal model to intervene the outcome Y by the T, you can terminate its effect if you found a mediater M of T on Y and you can intervene the mediater M. (update soon)
 
 Warning: Identification results of Ilya's algorithm are not unique due to different topological orderings and different fixing functions! You should notice that before you use it. The fixing function in this work is the individual's certain value. 
 
