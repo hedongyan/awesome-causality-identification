@@ -80,7 +80,7 @@ python test_id_all4v.py
 
 # Citation
 
-If you use awesome-causality-identification in your research, please cite us as follows:
+If you find this repo useful, please cite us as follows:
 ```
 @misc{causalid,
   author={Hedong YAN},
