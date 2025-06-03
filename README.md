@@ -33,7 +33,7 @@ This repository implement all kinds of identification algorithm of causal infere
 
 Warning: Identification results of Ilya's algorithm are not unique due to different topological orderings and different fixing functions! You should notice that before you use it. The fixing function in this work is the individual's certain value. 
 
-In future, I will add more automatic identification algorithms! If the other identification algorithm can be to the same algorithms. I will add an explaination of it rather than implement it repeatly.
+In future, it will support more automatic identification algorithms! If the other identification algorithm can be to the same algorithms, I will add an explaination of it rather than implement it repeatly. Please feel free to let us know your demands by issues. 
 
 ![Decision Tree of Identification Algorithm](figs/因果效应识别流程图.png)
 
