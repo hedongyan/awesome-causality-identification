@@ -33,7 +33,9 @@ This repository implement all kinds of identification algorithm of causal infere
 
 Warning: Identification results of Ilya's algorithm are not unique due to different topological orderings and different fixing functions! You should notice that before you use it. The fixing function in this work is the individual's certain value. 
 
-In future, it will support more automatic identification algorithms! If the other identification algorithm can be to the same algorithms, I will add an explaination of it rather than implement it repeatly. Please feel free to let us know your demands by issues. 
+In future, it will support more automatic identification algorithms! If the other identification algorithm can be to the same algorithms, we will add an explaination of it rather than implement it repeatly. Please feel free to let me know your demands by issues. 
+
+The following figure is the decision tree of identification algorithm choosing. 
 
 ![Decision Tree of Identification Algorithm](figs/因果效应识别流程图.png)
 
@@ -41,7 +43,7 @@ In future, it will support more automatic identification algorithms! If the othe
 
 The identification process is very easy to understand. 
 
-1. Create an ADMG which represent the data generation assumptions. The ADMG is DAG with hidden common cause. The three steps are add node names, add directed edges, and add bidirected edges to represent the hidden common causes. 
+1. Create an ADMG which represent the data generation assumptions. The ADMG is DAG with hidden common cause. The three steps are add node names to represent variable name, add directed edges to represent dependency, and add bidirected edges to represent the hidden common causes. 
 2. Create ObservationProbability to represent a distribution. 
 3. Create InterventionQuery to represent a causal query. 
 4. Create identification algorithms (such as ID, IDC) for the identification.
@@ -56,10 +58,13 @@ If you want to run the examples of ID algorithm and IDC algorithm, please run th
 
 ```python
 python test_id.py
+```
+
+```python
 python test_idc.py
 ```
 
-In order to verify the correctness of our algorithm, I checked many graphs in the file test_many_id.py. 
+In order to verify the correctness of our algorithm, we checked many graphs in the file test_many_id.py. 
 
 ```python
 python test_many_id.py
@@ -80,7 +85,7 @@ python test_id_all4v.py
 
 # Citation
 
-If you find this repo useful, please cite us as follows:
+If you find this repo useful, please cite me as follows:
 ```
 @misc{causalid,
   author={Hedong YAN},

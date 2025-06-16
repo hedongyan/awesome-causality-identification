@@ -1,4 +1,4 @@
-# import networkx as nx
+import networkx as nx
 import os
 
 def list_is(v,y):
@@ -554,7 +554,7 @@ class ID:
         # print("t:",t)
         # print("y:",y)
         # print("v:",v)
-        q.diagram.print()
+        # q.diagram.print()
 
         # line 1
         if len(t)==0:
@@ -573,7 +573,7 @@ class ID:
         an_y = g.ancestors(y)
         # print("ancestor y",an_y)
         # print("v",v)
-        print(list_minus(v,an_y))
+        # print(list_minus(v,an_y))
         if len(list_minus(v,an_y))>0:
             print("line 2")
             new_p = ObservationProbability()
@@ -723,8 +723,8 @@ class IDC:
         new_q.set_all(g, list_union(y,c), t, [], p, False)
         p_result = id.id(new_q)
         p_result.set_idc_2(True, y=y)
-        print("p_result:",p_result.get_latex_expression())
-        print("mention!")
+        # print("p_result:",p_result.get_latex_expression())
+        # print("mention!")
         # de_p_result = p_result.copy()
         # de_p_result.set_all(p_result, y, v, [], v)
         # # p_result_denominator = p_result.copy()
@@ -1023,76 +1023,76 @@ def create_graph_3(directed_edges,bidirected_edges):
 
     return g
 
-not_identified = 0
-identified = 0
-identified_results = []
-saved_results=[
-r"\frac{\sum_{X,T}{p(V)}}{\sum_{Y}{\sum_{X,T}{p(V)}}}",
-r"\frac{\sum_{T}{p(V)}}{\sum_{Y}{\sum_{T}{p(V)}}}",
-r"\frac{\frac{\sum_{X}{p(V)}}{\sum_{Y}{\sum_{X}{p(V)}}}}{\sum_{Y}{\frac{\sum_{X}{p(V)}}{\sum_{Y}{\sum_{X}{p(V)}}}}}",
-r"\frac{\frac{\sum_{Y,T}{p(V)}*p(V)}{\sum_{Y}{p(V)}}}{\sum_{Y}{\frac{\sum_{Y,T}{p(V)}*p(V)}{\sum_{Y}{p(V)}}}}",
-r"\frac{\frac{p(V)}{\sum_{X,Y}{p(V)}}}{\sum_{Y}{\frac{p(V)}{\sum_{X,Y}{p(V)}}}}",
-r"\frac{\frac{\sum_{T}{p(V)}}{\sum_{Y}{\sum_{T}{p(V)}}}}{\sum_{Y}{\frac{\sum_{T}{p(V)}}{\sum_{Y}{\sum_{T}{p(V)}}}}}",
-r"\frac{\frac{p(V)}{\sum_{Y}{p(V)}}}{\sum_{Y}{\frac{p(V)}{\sum_{Y}{p(V)}}}}",
-r"\frac{\sum_{T}{\frac{\sum_{X,Y}{p(V)}*p(V)}{\sum_{Y}{p(V)}}}}{\sum_{Y}{\sum_{T}{\frac{\sum_{X,Y}{p(V)}*p(V)}{\sum_{Y}{p(V)}}}}}",
-r"\frac{\frac{p(V)}{\sum_{X}{p(V)}}*\frac{\sum_{X}{p(V)}}{\sum_{Y}{\sum_{X}{p(V)}}}}{\sum_{Y}{\frac{p(V)}{\sum_{X}{p(V)}}*\frac{\sum_{X}{p(V)}}{\sum_{Y}{\sum_{X}{p(V)}}}}}",
-r"\frac{\sum_{T}{\frac{\sum_{X,Y}{p(V)}*p(V)}{\sum_{X}{p(V)}}}*\frac{\sum_{X}{p(V)}}{\sum_{Y}{\sum_{X}{p(V)}}}}{\sum_{Y}{\sum_{T}{\frac{\sum_{X,Y}{p(V)}*p(V)}{\sum_{X}{p(V)}}}*\frac{\sum_{X}{p(V)}}{\sum_{Y}{\sum_{X}{p(V)}}}}}",
-r"\frac{\frac{\sum_{X,T}{p(V)}*p(V)}{\sum_{X}{p(V)}}}{\sum_{Y}{\frac{\sum_{X,T}{p(V)}*p(V)}{\sum_{X}{p(V)}}}}",
-r"\frac{\frac{p(V)}{\sum_{X}{p(V)}}*\sum_{X,T}{p(V)}}{\sum_{Y}{\frac{p(V)}{\sum_{X}{p(V)}}*\sum_{X,T}{p(V)}}}"]
+# not_identified = 0
+# identified = 0
+# identified_results = []
+# saved_results=[
+# r"\frac{\sum_{X,T}{p(V)}}{\sum_{Y}{\sum_{X,T}{p(V)}}}",
+# r"\frac{\sum_{T}{p(V)}}{\sum_{Y}{\sum_{T}{p(V)}}}",
+# r"\frac{\frac{\sum_{X}{p(V)}}{\sum_{Y}{\sum_{X}{p(V)}}}}{\sum_{Y}{\frac{\sum_{X}{p(V)}}{\sum_{Y}{\sum_{X}{p(V)}}}}}",
+# r"\frac{\frac{\sum_{Y,T}{p(V)}*p(V)}{\sum_{Y}{p(V)}}}{\sum_{Y}{\frac{\sum_{Y,T}{p(V)}*p(V)}{\sum_{Y}{p(V)}}}}",
+# r"\frac{\frac{p(V)}{\sum_{X,Y}{p(V)}}}{\sum_{Y}{\frac{p(V)}{\sum_{X,Y}{p(V)}}}}",
+# r"\frac{\frac{\sum_{T}{p(V)}}{\sum_{Y}{\sum_{T}{p(V)}}}}{\sum_{Y}{\frac{\sum_{T}{p(V)}}{\sum_{Y}{\sum_{T}{p(V)}}}}}",
+# r"\frac{\frac{p(V)}{\sum_{Y}{p(V)}}}{\sum_{Y}{\frac{p(V)}{\sum_{Y}{p(V)}}}}",
+# r"\frac{\sum_{T}{\frac{\sum_{X,Y}{p(V)}*p(V)}{\sum_{Y}{p(V)}}}}{\sum_{Y}{\sum_{T}{\frac{\sum_{X,Y}{p(V)}*p(V)}{\sum_{Y}{p(V)}}}}}",
+# r"\frac{\frac{p(V)}{\sum_{X}{p(V)}}*\frac{\sum_{X}{p(V)}}{\sum_{Y}{\sum_{X}{p(V)}}}}{\sum_{Y}{\frac{p(V)}{\sum_{X}{p(V)}}*\frac{\sum_{X}{p(V)}}{\sum_{Y}{\sum_{X}{p(V)}}}}}",
+# r"\frac{\sum_{T}{\frac{\sum_{X,Y}{p(V)}*p(V)}{\sum_{X}{p(V)}}}*\frac{\sum_{X}{p(V)}}{\sum_{Y}{\sum_{X}{p(V)}}}}{\sum_{Y}{\sum_{T}{\frac{\sum_{X,Y}{p(V)}*p(V)}{\sum_{X}{p(V)}}}*\frac{\sum_{X}{p(V)}}{\sum_{Y}{\sum_{X}{p(V)}}}}}",
+# r"\frac{\frac{\sum_{X,T}{p(V)}*p(V)}{\sum_{X}{p(V)}}}{\sum_{Y}{\frac{\sum_{X,T}{p(V)}*p(V)}{\sum_{X}{p(V)}}}}",
+# r"\frac{\frac{p(V)}{\sum_{X}{p(V)}}*\sum_{X,T}{p(V)}}{\sum_{Y}{\frac{p(V)}{\sum_{X}{p(V)}}*\sum_{X,T}{p(V)}}}"]
 
-simplified_results = [
-    r"\(p(Y)\)",
-    r"\(p(Y|X)\)",
-    r"\(p(Y|T)\)",
-    r"\(p(Y|X,T)\)",
-    r"\(p(Y|X,T)\)",
-    r"\(p(Y|X)\)",
-    r"\(p(Y|X,T)\)",
-    r"\(\sum_{t\in\mathcal{T}}p(t)p(Y|X,t)\)",
-    r"\(p(Y|X,T)\)",
-    r"\(p(Y|X)\)",
-    r"\(\frac{p(Y)p(X|Y,T)}{\sum_{y\in\mathcal{Y}}{p(y)p(X|y,T)}}\)",
-    r"\(\frac{p(Y)p(X|Y,T)}{\sum_{y\in\mathcal{Y}}{p(y)p(X|y,T)}}\)"]
+# simplified_results = [
+#     r"\(p(Y)\)",
+#     r"\(p(Y|X)\)",
+#     r"\(p(Y|T)\)",
+#     r"\(p(Y|X,T)\)",
+#     r"\(p(Y|X,T)\)",
+#     r"\(p(Y|X)\)",
+#     r"\(p(Y|X,T)\)",
+#     r"\(\sum_{t\in\mathcal{T}}p(t)p(Y|X,t)\)",
+#     r"\(p(Y|X,T)\)",
+#     r"\(p(Y|X)\)",
+#     r"\(\frac{p(Y)p(X|Y,T)}{\sum_{y\in\mathcal{Y}}{p(y)p(X|y,T)}}\)",
+#     r"\(\frac{p(Y)p(X|Y,T)}{\sum_{y\in\mathcal{Y}}{p(y)p(X|y,T)}}\)"]
 
 
 
-# PRINT ALL POSSIBLE IDENTIFICATION SCENARIOS
-all_identification_scenarios = []
-for i in range(len(directed_edges_list)):
-    for j in range(len(bidirected_edges_list)):
-        # print(directed_edges_name_list[i],bidirected_edges_name_list[j])
-        g = create_graph_3(directed_edges_list[i],bidirected_edges_list[j])
-        # g.print()
-        p = ObservationProbability()
-        p.set_all(None, [], ["X","T","Y"], [], ["X","T","Y"])
-        q = InterventionQuery()
-        q.set_all(g, ["Y"], ["T"], ['X'], p, False)
-        newidc = IDC()
-        # identification
-        # print("identification")
-        try:
-            identified_p = newidc.id(q)
-            latexstr = identified_p.get_latex_expression()
-            # print(latexstr)
-            identified += 1
-            if latexstr in saved_results:
-                new_str = simplified_results[saved_results.index(latexstr)]
-                all_identification_scenarios.append(new_str)
-                if new_str not in identified_results:
-                    identified_results.append(new_str)
-                # identified_results.append(latexstr)
-            # if latexstr not in identified_results:
-            #     identified_results.append(latexstr)
-        except:
-            # print("ERROR")
-            not_identified += 1
-            all_identification_scenarios.append("Not Identifiable")
+# # PRINT ALL POSSIBLE IDENTIFICATION SCENARIOS
+# all_identification_scenarios = []
+# for i in range(len(directed_edges_list)):
+#     for j in range(len(bidirected_edges_list)):
+#         # print(directed_edges_name_list[i],bidirected_edges_name_list[j])
+#         g = create_graph_3(directed_edges_list[i],bidirected_edges_list[j])
+#         # g.print()
+#         p = ObservationProbability()
+#         p.set_all(None, [], ["X","T","Y"], [], ["X","T","Y"])
+#         q = InterventionQuery()
+#         q.set_all(g, ["Y"], ["T"], ['X'], p, False)
+#         newidc = IDC()
+#         # identification
+#         # print("identification")
+#         try:
+#             identified_p = newidc.id(q)
+#             latexstr = identified_p.get_latex_expression()
+#             # print(latexstr)
+#             identified += 1
+#             if latexstr in saved_results:
+#                 new_str = simplified_results[saved_results.index(latexstr)]
+#                 all_identification_scenarios.append(new_str)
+#                 if new_str not in identified_results:
+#                     identified_results.append(new_str)
+#                 # identified_results.append(latexstr)
+#             # if latexstr not in identified_results:
+#             #     identified_results.append(latexstr)
+#         except:
+#             # print("ERROR")
+#             not_identified += 1
+#             all_identification_scenarios.append("Not Identifiable")
 
-for i in range(len(all_identification_scenarios)):
-    # every 8 elements, print a new line
-    if i % 8 == 0:
-        print("------------------",int(i/8)+1,"------------------")
-    print(all_identification_scenarios[i])
+# for i in range(len(all_identification_scenarios)):
+#     # every 8 elements, print a new line
+#     if i % 8 == 0:
+#         print("------------------",int(i/8)+1,"------------------")
+#     print(all_identification_scenarios[i])
 
 # print("identified",identified)
 # print("not identified",not_identified)
