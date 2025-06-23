@@ -1,3 +1,23 @@
+# Why you may need causal identification?
+
+## 💰 Find Your Growth Levers: Cut Through the Data Noise!
+
+Is your business leaving money on the table?  
+- That "successful" campaign—did it **really drive profit**, or just attract existing buyers?  
+- Your new UX redesign—is it a **true upgrade** or just a placebo?  
+- Is churn caused by **pricing**... or **poor support**?  
+
+📈 **Guessing = Wasted budget + Missed opportunities!**  
+Correlation tricks you. Causation empowers you.  
+
+**Causal identification** is your **ROI magnifying glass**. It lets you:  
+- 🎯 **Pinpoint drivers**: Discover what *truly* moves metrics (revenue, retention, costs).  
+- ⚖️ **Optimize resources**: Invest time/money where it *actually* generates returns.  
+- 📊 **Quantify value**: Measure the *exact dollar impact* of every change.  
+
+**Stop optimizing blind. Start growing smart. 🚀 Star now to turn data into dollars!**  
+*(Your Project Name) delivers (enterprise-grade/lightning-fast/intuitive) causal insights*.  
+
 # Motivation
 
 The motivation to create this repository at Janurary of 2022 and rewrite the identification code is that existed causal package can not implement the complete identification algorithms of Ilya Shpitser correctly, including [CausalEffect](https://github.com/santikka/causaleffect)(Santtu Tikka), [CausalML](https://causalml.readthedocs.io/en/latest/about.html)(Uber), [Ananke](https://ananke.readthedocs.io/en/latest/)(Ilya Shpitser), [dowhy](https://github.com/py-why/dowhy)(Microsoft), [CEE](https://github.com/L-F-Z/CEE)(Fengzhi Li), [Dagitty](https://www.dagitty.net/)(Johannes Textor), [YLearn](https://github.com/DataCanvasIO/YLearn)(CSDN). If I did not implement it, I can not identify the graph automaticlly in my following works. 
