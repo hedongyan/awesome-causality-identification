@@ -45,11 +45,11 @@ I did not find complete ID and IDC algorithm in their source code after searchin
 
 # Introduction
 
-This repository implement all kinds of identification algorithm of causal inference, including causal graph with hidden common causes. Those identification is mainly based on Judea Pearl's three assumpations of identification on structural causal model. 
+This repository implement all kinds of identification algorithm of causal inference, including causal graph with hidden common causes. The post-intervention distribution of `p(V)=\prod_{i}p(v_i|pa_i)` is defined by `p(V(T))=\prod_{i|V_i\notin T}p(v_i|pa_i)` where `V` is the measured variables, `pa_i` is parents of `v_i`. Those identification is mainly based on Judea Pearl's three theorems of identification on structural causal model. 
 
-1. ID and IDC algorithm of Ilya Shpitser and Judea Pearl. This algorithm is complete for causal query with observation data on Directed Acyclic Graph with hidden common causes. 
-2. IDZ algorithm of Elias Bareinboim and Judea Pearl. This algorithm is complete for causal query with surrogate experiments and observation data on Directed Acyclic Graph with hidden common causes. (update soon)
-3. Path-specific effect identification. The path-specific effect is the causal effect from treatment T to outcome Y by the path of mediater M. When someone use a causal model to intervene the outcome Y by the T, you can terminate its effect if you found a mediater M of T on Y and you can intervene the mediater M. (update soon)
+1. Intervention query. ID and IDC algorithm of Ilya Shpitser and Judea Pearl. This algorithm is complete for causal query with observation data on Directed Acyclic Graph with hidden common causes. The interested quantities are Pr(Y(T)), Pr(Y(T)|X(T)). 
+2. Mediator Analysis. The path-specific effect is the causal effect from treatment T to outcome Y by the path of mediater M. When someone use a causal model to intervene the outcome Y by the T, you can terminate its effect if you found a mediater M of T on Y and you can intervene the mediater M. The interested quantity is total effect Pr(Y(T)), natural direct effect Pr(Y(T)|M), natural indirect effect Pr(Y(M)|T). 
+3. Surrogate experiments. When you can not internve the treatment directly, you may can intervene other variable. Such intervention is called surrogate experiment. IDZ algorithm of Elias Bareinboim and Judea Pearl is complete for causal query with surrogate experiments and observation data on Directed Acyclic Graph with hidden common causes. (update soon)
 
 Warning: Identification results of Ilya's algorithm are not unique due to different topological orderings and different fixing functions! You should notice that before you use it. The fixing function in this work is the individual's certain value. 
 
