@@ -96,7 +96,7 @@ In the output, "Not identifiable" means we can not identfy the causal effect fro
 
 I directly plot the [identification table](https://hedongyan.github.io/files/id3.html) of all 200 DAG with abitrary hidden common causes (three measured variables) for quick (conditional) causal query. I firstly identify the 200 graphs [mannully](https://hedongyan.github.io/files/myuai2022.pdf) and then check the correctness of the program. 
 
-I directly list all [51 identification results](https://hedongyan.github.io/files/id4.pdf) of 34752 cases for 4 observed variables with hidden confounders for query Pr(Y(T)). The program to automatically identify the 34752 graphs is test_id_all4v.py. 
+I directly list all [51 identification results](https://hedongyan.github.io/files/id4.pdf) of 34752 cases for 4 observed variables with hidden confounders for query Pr(Y(T)). The program to automatically identify the 34752 graphs is test_id_all4v.py. The result is stored in the **identified_results.txt**.
 
 ```python
 pip install networkx
