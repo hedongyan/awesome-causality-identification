@@ -16,7 +16,7 @@ Correlation tricks you. Causation empowers you.
 - 📊 **Quantify value**: Measure the *exact dollar impact* of every change.  
 
 **Stop optimizing blind. Start growing smart. 🚀 Star now to turn data into dollars!**  
-*(Your Project Name) delivers (enterprise-grade/lightning-fast/intuitive) causal insights*.  
+*ACI delivers lightning-fast causal insights*.  
 
 # Motivation
 
