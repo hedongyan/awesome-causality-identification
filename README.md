@@ -20,16 +20,16 @@ Correlation tricks you. Causation empowers you.
 
 # Motivation
 
-The motivation to create this repository at Janurary of 2022 and rewrite the identification code is that existed causal package can not implement the complete identification algorithms of Ilya Shpitser correctly, including [CausalEffect](https://github.com/santikka/causaleffect)(Santtu Tikka), [CausalML](https://causalml.readthedocs.io/en/latest/about.html)(Uber), [Ananke](https://ananke.readthedocs.io/en/latest/)(Ilya Shpitser), [dowhy](https://github.com/py-why/dowhy)(Microsoft), [CEE](https://github.com/L-F-Z/CEE)(Fengzhi Li), [Dagitty](https://www.dagitty.net/)(Johannes Textor), [YLearn](https://github.com/DataCanvasIO/YLearn)(CSDN). If I did not implement it, I can not identify the graph automaticlly in my following works. 
+The motivation to create this repository at Janurary of 2022 and rewrite the identification code is that existed causal package can not implement the complete identification algorithms of Ilya Shpitser correctly, including [CausalEffect](https://github.com/santikka/causaleffect)(Santtu Tikka), [CausalML](https://causalml.readthedocs.io/en/latest/about.html)(Uber), [Ananke](https://ananke.readthedocs.io/en/latest/)(Ilya Shpitser), [dowhy](https://github.com/py-why/dowhy)(Microsoft), [CEE](https://github.com/L-F-Z/CEE)(Fengzhi Li), [Dagitty](https://www.dagitty.net/)(Johannes Textor), [YLearn](https://github.com/DataCanvasIO/YLearn)(CSDN). 
 
 1. CausalEffect.
 The understanding of causaleffect of line 7 of ID algorithm is wrong in their [paper](https://www.jstatsoft.org/article/view/v076i12/0). 
 
 2. CEE.
-The understanding of CEE of line 6 of ID algorithm is wrong. It confused the fixed value v and variable V. And I got a wrong result after I run the program. 
+The understanding of CEE of line 6 of ID algorithm is wrong. It confused the fixed value v and variable V. And got a wrong result after run the program. 
 
 3. Dowhy.
-I did not find complete ID and IDC algorithm in their source code after searching in their source code. 
+Did not find complete ID and IDC algorithm in their source code after searching in their source code. 
 
 4. Ananke.
 They use fixing operation in nest forms and do not give final expression. 
@@ -38,10 +38,10 @@ They use fixing operation in nest forms and do not give final expression.
 It only support adjustment and instrument variable.
 
 6. YLearn.
-I did not find complete ID and IDC algorithm in their source code after searching in their source code. 
+Did not find complete ID and IDC algorithm in their source code after searching in their source code. 
 
 7. CausalML.
-I did not find complete ID and IDC algorithm in their source code after searching in their source code. 
+Did not find complete ID and IDC algorithm in their source code after searching in their source code. 
 
 # Introduction
 
@@ -72,7 +72,7 @@ The identification process is very easy to understand.
 
 # Example
 
-I checked many exmaples of the identification result mannuly. 
+We checked many exmaples of the identification result mannuly. 
 
 If you want to run the examples of ID algorithm and IDC algorithm, please run the examples of ID and IDC by following orders:
 
@@ -94,9 +94,9 @@ In the output, "Not identifiable" means we can not identfy the causal effect fro
 
 # Application
 
-I directly plot the [identification table](https://hedongyan.github.io/files/id3.html) of all 200 DAG with abitrary hidden common causes (three measured variables) for quick (conditional) causal query. I firstly identify the 200 graphs [mannully](https://hedongyan.github.io/files/myuai2022.pdf) and then check the correctness of the program. 
+We directly plot the [identification table](https://hedongyan.github.io/files/id3.html) of all 200 DAG with abitrary hidden common causes (three measured variables) for quick (conditional) causal query. I firstly identify the 200 graphs [mannully](https://hedongyan.github.io/files/myuai2022.pdf) and then check the correctness of the program. 
 
-I directly list all [51 identification results](https://hedongyan.github.io/files/id4.pdf) of 34752 cases for 4 observed variables with hidden confounders for query Pr(Y(T)). The program to automatically identify the 34752 graphs is test_id_all4v.py. The result is stored in the **identified_results.txt**.
+We directly list all [51 identification results](https://hedongyan.github.io/files/id4.pdf) of 34752 cases for 4 observed variables with hidden confounders for query Pr(Y(T)). The program to automatically identify the 34752 graphs is test_id_all4v.py. The result is stored in the **identified_results.txt**.
 
 ```python
 pip install networkx
